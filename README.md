@@ -39,7 +39,16 @@ Configured an Ubuntu Desktop VM to enforce **multi-factor authentication (MFA)**
 
 ---
 
-#### 4. SSH and MFA Configuration
+#### 4: SSH Installation**
+- Installed `openssh-server` for SSH service  
+- Confirmed SSH service was running and enabled  
+
+![SSH Service Installed](screenshots/linux-ssh-04-ssh-install.png)  
+*SSH service installed and active on Ubuntu VM*
+
+---
+
+#### 5. SSH and MFA Configuration
 - Installed required packages: `openssh-server` and `libpam-google-authenticator`  
 - Generated secret key and emergency scratch codes using **Google Authenticator**  
 - Modified `/etc/pam.d/sshd` and `/etc/ssh/sshd_config` to enforce MFA  
@@ -50,7 +59,7 @@ Configured an Ubuntu Desktop VM to enforce **multi-factor authentication (MFA)**
 
 ---
 
-#### 5. Testing SSH with MFA
+#### 6. Testing SSH with MFA
 - Connected from a remote Windows machine via SSH on port **2222**  
 - Verified MFA by entering both **password** and **verification code** from the app  
 
