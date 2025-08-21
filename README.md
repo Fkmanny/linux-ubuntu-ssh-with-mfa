@@ -10,6 +10,16 @@ Configured an Ubuntu Desktop VM to enforce **multi-factor authentication (MFA)**
 
 ---
 
+## Organizational Application
+
+### Importance to Companies
+This implementation is critical for securing administrative access to critical servers and infrastructure. MFA for SSH prevents unauthorized access even if credentials are compromised, protecting sensitive systems and data from breaches.
+
+### Use Case Scenario
+A cloud hosting provider enforces MFA for all engineer SSH access to customer-facing production servers, ensuring that even if an engineer's password is phished, attackers cannot gain access without the time-based code.
+
+---
+
 ### **Configuration & Screenshots**
 
 #### 1. Ubuntu Setup
